@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>左边固定，右边自适应</title>
+  <style type="text/css">
+    .container {
+      overflow: hidden; /* 清除浮动 */
+    }
+
+    .left {
+      background-color: red;
+      float: left;
+      width: 200px;
+      margin-right: -100%; /* 等于负的右边的宽度 */
+    }
+
+    .content {
+      float: left;
+      width: 100%;
+    }
+
+    .inner {
+      background-color: yellow;
+      margin-left: 200px; /* 等于左边的宽度 */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">left<br><br>left</div>
+    <div class="content">
+      <div class="inner">inner</div>
+    </div>
+  <div>
+</body>
+</html>

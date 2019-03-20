@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>三列浮动中间列自适应</title>
+  <style type="text/css">
+    html, body {
+      padding: 0;
+      margin: 0;
+    }
+
+    #left {
+      background-color: #f00;
+      border: 2px solid #0f0;
+      width: 200px;
+      height: 300px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    #right {
+      background-color: #ff0;
+      border: 2px solid #00f;
+      width: 100px;
+      height: 300px;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    #center {
+      background-color: #0ff;
+      border: 2px solid #f0f;
+      height: 300px;
+      margin-left: 204px;
+      margin-right: 104px;
+    }
+  </style>
+</head>
+<body>
+  <div id="left">left</div>
+  <div id="center">center</div>
+  <div id="right">right</div>
+</body>
+</html>

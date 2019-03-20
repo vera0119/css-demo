@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>左边固定，右边自适应</title>
+  <style type="text/css">
+    /* 设置一个很大的`padding-bottom`和负`margin-bottom`，两者相互抵消，外层容器通过`overflow:hiden`把溢出背景切掉 */
+
+    .container {
+      overflow: hidden; /* 清除浮动 */
+    }
+
+    .left {
+      box-sizing: border-box;
+      background-color: red;
+      border: 5px solid green;
+      float: left;
+      width: 200px;
+      margin-bottom: -99999px;
+      padding-bottom: 99999px;
+    }
+
+    .content {
+      background-color: yellow;
+      border: 5px solid blue;
+      margin-left: 200px; /* 等于左边的宽度 */
+      /*overflow: hidden;*/ /* 可以不设置margin-left，通过overflow:hidden也可以实现右边自适应 */
+      margin-bottom: -99999px;
+      padding-bottom: 99999px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">left<br><br>left</div>
+    <div class="content">content</div>
+  <div>
+</body>
+</html>

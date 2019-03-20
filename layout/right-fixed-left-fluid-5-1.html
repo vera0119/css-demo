@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>右边固定，左边自适应</title>
+  <style type="text/css">
+    .container {
+      display: table;
+      width: 100%;
+    }
+
+    .content {
+      background-color: yellow;
+      border: 5px solid blue;
+      display: table-cell;
+    }
+
+    .right {
+      background-color: red;
+      border: 5px solid green;
+      display: table-cell;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">content</div>
+    <div class="right">left<br><br>left</div>
+  <div>
+</body>
+</html>

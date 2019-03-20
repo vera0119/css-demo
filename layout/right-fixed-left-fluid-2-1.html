@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>右边固定，左边自适应</title>
+  <style type="text/css">
+    .container {
+      background-color: yellow; /* 背景色为左边的颜色 */
+      overflow: hidden; /* 清除浮动 */
+    }
+
+    .content {
+      border-right: 200px solid red; /* 等于右边的宽度，颜色为右边的颜色 */
+    }
+
+    .right {
+      background-color: red;
+      float: right;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="right">right<br><br>right</div>
+    <div class="content">content</div>
+  <div>
+</body>
+</html>
