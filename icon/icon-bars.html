@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>icon-bars</title>
+  <style type="text/css">
+    .icon {
+      margin-bottom: 10px;
+    }
+
+    .icon-bars {
+      display: inline-block;
+      width: 16px;
+      height: 3px;
+      padding: 2px 0;
+      border-top: 3px solid;
+      border-bottom: 3px solid;
+      background-color: currentColor;
+      background-clip: content-box;
+    }
+
+    .icon-bars2 {
+      width: 16px;
+      height: 3px;
+      border-top: 9px double; /* 使用double实现无法控制三道杠之间的距离 */
+      border-bottom: 3px solid;
+    }
+  </style>
+</head>
+<body>
+  <div class="icon icon-bars"></div>
+  <div class="icon icon-bars2"></div>
+</body>
+</html>
